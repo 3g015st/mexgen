@@ -3,15 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "bin": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "mongo-express-gen",
+    "mongodb crud generator",
+    "mern"
+  ],
+  "author": "Benedict Lutab",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^7.0.6",
-    "replace-in-file": "^5.0.2",
     "rxjs": "^6.5.4",
     "slugify": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git+https://github.com/Embidiel/mongo-express-gen.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/Embidiel/mongo-express-gen.git/issues"
+  },
+  "homepage": "https://github.com/Embidiel/mongo-express-gen.git#readme"
 }

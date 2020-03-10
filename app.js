@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const inquirer = require('inquirer');
 const {from, of, Observable, throwError} = require('rxjs');
 const {map, mergeMap, catchError, pluck, tap, mapTo} = require('rxjs/operators');
