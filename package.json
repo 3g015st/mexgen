@@ -1,6 +1,6 @@
 {
-  "name": "mongo-express-gen",
-  "version": "1.0.0",
+  "name": "mexgen",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "bin": "app.js",
@@ -10,7 +10,7 @@
   "keywords": [
     "mongo-express-gen",
     "mongodb crud generator",
-    "mern"
+    "mexgen"
   ],
   "author": "Benedict Lutab",
   "license": "MIT",
@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url" : "git+https://github.com/Embidiel/mongo-express-gen.git"
+    "url" : "git+https://github.com/Embidiel/mexgen.git"
   },
   "bugs": {
-    "url" : "https://github.com/Embidiel/mongo-express-gen.git/issues"
+    "url" : "https://github.com/Embidiel/mexgen.git/issues"
   },
-  "homepage": "https://github.com/Embidiel/mongo-express-gen.git#readme"
+  "homepage": "https://github.com/Embidiel/mexgen.git#readme"
 }
