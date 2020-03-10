@@ -1,0 +1,15 @@
+// This route has been generated using Mongo Express Generator.
+// Date & Time Generated : <date-time>
+
+const express = require("express");
+const router = express.Router();
+
+const <name>Controller = require("../controllers/<name>Controller");
+
+router.get('/list', <name>Controller.get<name>List);
+router.get('/:id', PageController.get<name>ByID);
+router.put('/update/:id', <name>Controller.update<name>ByID);
+router.post('/add', <name>Controller.add<name>);
+router.delete('/delete/:id', <name>Controller.delete<name>);
+
+module.exports = router;

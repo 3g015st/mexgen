@@ -1,0 +1,51 @@
+// This action has been generated using Mongo Express Generator.
+// Date & Time Generated : <date-time>
+
+const <name> = require("../models/<name>");
+
+exports.get<name>List = async function () {
+  try{
+    const list = await <name>.find();
+    return list;
+  } catch(err) {
+    console.log(err);
+  }
+};
+
+exports.get<name>ByID = async function (id) {
+  try{
+    const result = await <name>.find({_id: id});
+    return result;
+    } catch(err) {
+      console.log(err);
+    }
+};
+
+exports.add<name> = async function (object) {
+    try{
+      const created = await <name>.create(object);
+      return created;
+    } catch(err) {
+      console.log(err);
+    }
+};
+
+exports.update<name>ByID = async function (id, object) {
+    try{
+        const updated = await <name>.findOneAndUpdate({_id : id} , object);
+        return updated;
+      } catch(err) {
+        console.log(err);
+      }
+};
+
+exports.delete<name>ByID = async function (id) {
+      try{
+        const deleted = await <name>.findOneAndDelete({_id : id});
+        return deleted;
+      } catch(err) {
+        console.log(err);
+      }
+};
+
+

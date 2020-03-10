@@ -1,0 +1,6 @@
+// This model has been generated using Mongo Express Generator.
+// Date & Time Generated : <date-time>
+
+const mongoose = require('mongoose');
+const <name>Schema = new mongoose.Schema({});
+module.exports = mongoose.model('<name>', <name>Schema, '<name>s');

@@ -1,0 +1,32 @@
+// This controller has been generated using Mongo Express Generator.
+// Date & Time Generated : <date-time>
+
+const Actions = require("../db/<name>-actions")
+const {validateActionSuccess, validateObjectNotEmpty} = require("../util/global-service");
+
+exports.get<name>List = async function (req, res) {
+  const list = await Actions.get<name>List();
+  validateObjectNotEmpty(list, res);
+};
+
+exports.get<name>ByID = async function (req, res) {
+  const status = await Actions.get<name>ByID(req.params.id);
+  validateObjectNotEmpty(status, res);
+};
+
+exports.add<name> = async function (req, res) {
+  const status = await Actions.add<name>(req.body);
+  validateActionSuccess(status, res);
+};
+
+exports.update<name>ByID = async function (req, res) {
+  const status = await Actions.update<name>ByID(req.params.id, req.body);
+  validateActionSuccess(status, res);
+};
+
+exports.delete<name> = async function (req, res) {
+  const status = await Actions.delete<name>(req.body);
+  validateActionSuccess(status, res);
+};
+
+
